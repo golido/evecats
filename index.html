@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Ads: 706883886 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-706883886"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-706883886');
+</script>
+<!-- Event snippet for קליקים על טלפון בדף נחיתה חדש conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-706883886/qwe9CPjslMoDEK7iiNEC',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grey.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container">
+            
+            <div class="logo"><img src="images/logo.webp" alt="logo"></div>
+            <!-- <nav>
+                <a href="#">blue</a>
+                <a href="#">red</a>
+                <a href="#">white</a>
+                <a href="#">yellow</a>
+                <a href="#">blue</a>
+            </nav> -->
+           <div><a onclick="return gtag_report_conversion('tel:800-123-4567');" href="tel:052-4338044">052-4338044 טלפון</a></div>
+
+            <div class="burger">
+
+                <img src="images/burger.png" alt="burger" height="80">
+            </div>
+        </div>
+    </header>
+    <div class="strip container-fluid">
+
+        <div class="container">
+            <div>
+                <h1>I love silver colors</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ipsa quae ea. Ipsum provident
+                    tempore harum ut iure, temporibus quo.
+                </p>
+                <button>order color</button>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <main class="container-fluid">
+        <div class="half_grey">
+            <div class="container">
+                <div class="box">
+                    <img src="images/icon1.png">
+                    <h4>sasadasdasdad</h4>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eligendi enim optio earum tenetur
+                        eaque, quod sit distinctio aperiam laudantium odit? Qui minima illo laborum quo natus
+                        consequuntur velit amet.</p>
+                </div>
+                <!-- end box -->
+                <div class="box">
+                    <img src="images/icon2.png">
+                    <h4>sasadasdasdad</h4>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eligendi enim optio earum tenetur
+                        eaque, quod sit distinctio aperiam laudantium odit? Qui minima illo laborum quo natus
+                        consequuntur velit amet.</p>
+                </div>
+                <!-- end box -->
+
+                <div class="box">
+                    <img src="images/icon3.png">
+                    <h4>sasadasdasdad</h4>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eligendi enim optio earum tenetur
+                        eaque, quod sit distinctio aperiam laudantium odit? Qui minima illo laborum quo natus
+                        consequuntur velit amet.</p>
+                </div>
+                <!-- end box -->
+
+
+
+            </div>
+        </div>
+
+    </main>
+    <footer class="container-fluid">
+
+
+
+    </footer>
+</body>
+
+</html>
